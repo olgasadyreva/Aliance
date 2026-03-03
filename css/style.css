@@ -18,7 +18,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none; /* для использования Pixel Perfect*/
+  display: none; /*для использования Pixel Perfect*/
 }
 
 .mobile-menu {
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
   position: fixed;
   display: flex;
   align-items: center;
-  height: 5.875rem;
+  height: 94px;
   width: 100%;
   left: 0;
   top: 0;
@@ -67,7 +67,8 @@ body::-webkit-scrollbar {
 
 .header {
   padding-top: 5.875rem;
-  min-height: 100vh;
+  padding-top: 94px;
+  max-height: 970px;
 }
 
 .header-image {
@@ -154,7 +155,6 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-shrink: 0;
   height: 100%;
-
   padding: 1.5625rem 3.375rem;
 }
 
@@ -168,7 +168,7 @@ body::-webkit-scrollbar {
 
 .separator {
   width: 9.375rem;
-  height: 0.125rem;
+  height: 2px;
   background: #5c8ee5;
 }
 
@@ -207,21 +207,58 @@ body::-webkit-scrollbar {
 .header-features {
   position: relative;
   display: flex;
-  min-height: 10.5rem;
+  height: 168px;
+  margin-top: 100px;
+  margin-bottom: 0;
   padding: 0;
-  margin-top: 6.125rem;
   color: #ffffff;
   list-style: none;
 }
 
 .header-features-item {
   width: 18rem;
+  min-height: 100%;
   padding: 1.875rem 3.125rem 1.625rem;
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
 
-.header-features-item:not(:last-child) {
-  border-right: none;
+.slider-buttons {
+  display: none;
+  height: 44px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  cursor: pointer;
+}
+
+.slider-buttons-steps {
+  display: none;
+  width: 120px;
+  height: 40px;
+}
+
+.slider-buttons-steps .slider-button-prev,
+.slider-buttons-steps .slider-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-basis: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slider-steps-svg {
+  width: 30px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 .header-features-svg {
@@ -250,7 +287,7 @@ body::-webkit-scrollbar {
 .section-title {
   margin: 0;
   margin-top: 1.5625rem;
-  margin-bottom: 3.25rem;
+  margin-bottom: 38px;
   font-family: "Bebas Neue Book", "Arial", sans-serif;
   font-weight: 400;
   font-size: 3.75rem;
@@ -268,7 +305,8 @@ body::-webkit-scrollbar {
 }
 
 .steps-item {
-  max-width: 20.625rem;
+  max-width: 330px;
+  width: 330px;
 }
 
 .steps-num {
@@ -291,7 +329,7 @@ body::-webkit-scrollbar {
 
 .steps-title {
   flex-shrink: 0;
-  margin-top: 2.1875rem;
+  margin-top: 32px;
   margin-bottom: 0.625rem;
   font-weight: 400;
   font-size: 1.75rem;
@@ -302,7 +340,7 @@ body::-webkit-scrollbar {
 .steps-text {
   margin-top: 0.625rem;
   margin-bottom: 1.25rem;
-  padding-right: 2.1875rem;
+  padding-right: 2rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
@@ -330,10 +368,6 @@ body::-webkit-scrollbar {
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
-  }
-
-  .header-image {
-    background-position: center;
   }
 }
 
@@ -600,5 +634,191 @@ body::-webkit-scrollbar {
 
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-1px);
+  }
+
+  .slider-buttons {
+    display: flex;
+    height: 44px;
+  }
+
+  .slider-buttons-steps {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #5c8ee6;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+
+  .section {
+    margin-top: 100px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .header-image {
+    max-height: none;
+    padding-top: 68px;
+    background-position: center;
+    max-height: 956px;
+    padding-top: 68px;
+  }
+
+  .header-title {
+    margin-bottom: 15px;
+    font-size: 4rem;
+  }
+
+  .header-text {
+    margin-bottom: 28px;
+    padding-right: 1.5rem;
+    font-size: 14px;
+  }
+
+  .header-button {
+    width: 100%;
+    max-width: none;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .header-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-light .section-title {
+    margin-top: 18px;
+    margin-bottom: 35px;
+  }
+
+  .separator {
+    width: 8.5rem;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide:not(.swiper-slide-active) {
+    margin-right: 15px;
+  }
+
+  .swiper-slide-active {
+    margin-left: 15px;
+  }
+
+  .header-features {
+    height: 140px;
+    min-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .header-features-item {
+    min-height: 0;
+    max-height: 140px;
+    padding: 20px 30px;
+  }
+
+  .header-features-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-features-text {
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .steps.swiper-wrapper {
+    max-height: 218px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: visible;
+  }
+  .swiper-steps {
+    height: 278px !important;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .steps-item {
+    min-width: 300px;
+    min-height: 218px;
+  }
+
+  .steps-num {
+    font-size: 48px;
+    line-height: 43px;
+  }
+
+  .steps-title {
+    margin-top: 23px;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .steps-title br {
+    display: none;
+  }
+
+  .steps-text {
+    margin-bottom: 26px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .steps-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+  }
+
+  .steps-link::before {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .slider-buttons.slider-buttons-steps {
+    max-width: 120px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .header-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-light .separator {
+    margin-left: 15px;
+  }
+  .section-title {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
