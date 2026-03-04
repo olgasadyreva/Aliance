@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-display: none;
+  display: none;
 }
 
 .logo-svg {
@@ -72,7 +72,6 @@ display: none;
 .header {
   padding-top: 5.875rem;
   padding-top: 94px;
-  max-height: 970px;
 }
 
 .header-image {
@@ -113,6 +112,7 @@ display: none;
 
 .header-nav-item:not(:last-child) {
   margin-right: 4.8%;
+  max-width: 300px;
 }
 
 .header-nav-link {
@@ -197,6 +197,7 @@ display: none;
 }
 
 .header-text {
+  height: 100%;
   max-width: 45rem;
   margin-top: 0;
   margin-bottom: 3rem;
@@ -211,7 +212,6 @@ display: none;
 .header-features {
   position: relative;
   display: flex;
-  height: 168px;
   margin-top: 100px;
   margin-bottom: 0;
   padding: 0;
@@ -222,6 +222,7 @@ display: none;
 .header-features-item {
   width: 18rem;
   min-height: 100%;
+  height: auto;
   padding: 1.875rem 3.125rem 1.625rem;
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
@@ -654,6 +655,27 @@ display: none;
     background-color: #5c8ee6;
     border: none;
   }
+
+  .swiper-steps {
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: 0;
+    overflow: visible;
+  }
+
+  .swiper-steps .swiper-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 0;
+    overflow: visible;
+  }
+
+  .steps-item {
+    min-width: 300px;
+    min-height: 218px;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -662,7 +684,7 @@ display: none;
   }
 
   .section {
-    margin-top: 100px;
+    margin-top: 96px;
   }
 
   .section-title {
@@ -675,7 +697,7 @@ display: none;
     max-height: none;
     padding-top: 68px;
     background-position: center;
-    max-height: 956px;
+    max-height: none;
     padding-top: 68px;
   }
 
@@ -715,16 +737,13 @@ display: none;
     width: 100%;
   }
 
-  .swiper-slide:not(.swiper-slide-active) {
-    margin-right: 15px;
-  }
-
   .swiper-slide-active {
     margin-left: 15px;
   }
 
   .header-features {
     height: 140px;
+    height: auto;
     min-height: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -732,7 +751,7 @@ display: none;
 
   .header-features-item {
     min-height: 0;
-    max-height: 140px;
+    height: auto;
     padding: 20px 30px;
   }
 
@@ -748,33 +767,13 @@ display: none;
     line-height: 160%;
   }
 
-  .steps.swiper-wrapper {
-    max-height: 218px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow: visible;
-  }
-  .swiper-steps {
-    height: 278px !important;
-    margin-bottom: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .steps-item {
-    min-width: 300px;
-    min-height: 218px;
-  }
-
   .steps-num {
     font-size: 48px;
-    line-height: 43px;
+    line-height: 50px;
   }
 
   .steps-title {
-    margin-top: 23px;
+    margin-top: 18px;
     font-size: 20px;
     line-height: 130%;
   }

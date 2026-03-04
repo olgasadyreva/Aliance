@@ -7,13 +7,13 @@ const menu = document.querySelector(".mobile-menu");
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
   logo.style.display = "block";
-	logoLight.style.display = "none";
+  logoLight.style.display = "none";
 };
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
   logo.style.display = "none";
-	logoLight.style.display = "block";
+  logoLight.style.display = "block";
 };
 
 const openMenu = (event) => {
@@ -75,20 +75,23 @@ const swiper = new Swiper(".swiper", {
 const swiperSteps = new Swiper(".swiper.swiper-steps", {
   speed: 400,
   autoHeight: false,
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   navigation: {
     nextEl: ".swiper-steps .slider-button-next",
     prevEl: ".swiper-steps .slider-button-prev",
   },
   breakpoints: {
-    576: {
+    320: {
       slidesPerView: 1.3,
+    },
+    576: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 3,
