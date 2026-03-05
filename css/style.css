@@ -658,9 +658,7 @@ body::-webkit-scrollbar {
 
   .swiper-steps {
     margin-bottom: 20px;
-    margin-left: -15px;
     margin-right: 0;
-    overflow: visible;
   }
 
   .swiper-steps .swiper-wrapper {
@@ -733,10 +731,6 @@ body::-webkit-scrollbar {
     width: 8.5rem;
   }
 
-  .swiper {
-    width: 100%;
-  }
-
   .swiper-slide-active {
     margin-left: 15px;
   }
@@ -750,7 +744,7 @@ body::-webkit-scrollbar {
   }
 
   .header-features-item {
-    min-height: 0;
+		min-height: 0;
     height: auto;
     padding: 20px 30px;
   }
@@ -784,8 +778,7 @@ body::-webkit-scrollbar {
 
   .steps-text {
     margin-bottom: 26px;
-    padding-right: 0;
-    font-size: 14px;
+		font-size: 14px;
     line-height: 160%;
   }
 
@@ -805,7 +798,7 @@ body::-webkit-scrollbar {
     max-width: 120px;
     margin-top: 18px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 15px;
   }
 }
 
