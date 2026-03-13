@@ -7,8 +7,8 @@ html {
 }
 
 @font-face {
-  font-family: "Bebas Neue Book";
-  src: url("../fonts/BebasNeueBook.woff") format("woff");
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,12 +33,12 @@ body::-webkit-scrollbar {
 .navbar {
   z-index: 2;
   position: fixed;
-  display: flex;
-  align-items: center;
-  height: 94px;
-  width: 100%;
   left: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 94px;
   color: #ffffff;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   transition:
@@ -47,9 +47,9 @@ body::-webkit-scrollbar {
 }
 
 .navbar-light {
-  background-color: #ffffff;
-  color: #292d33;
   height: 4.625rem;
+  color: #292d33;
+  background-color: #ffffff;
 }
 
 .phone-icon {
@@ -104,21 +104,51 @@ body::-webkit-scrollbar {
 .header-nav {
   display: flex;
   flex-basis: 100%;
+  height: 100%;
   padding: 0;
   padding-left: 3.125rem;
   margin: 0;
   list-style: none;
 }
 
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .header-nav-item:not(:last-child) {
-  margin-right: 4.8%;
   max-width: 300px;
+  margin-right: 4.8%;
 }
 
 .header-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-size: 1rem;
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid rgba(235, 235, 240, 0);
+}
+
+.header-nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: auto;
+  right: 0;
+  bottom: -1px;
+  background-color: #5c8ee6;
+  transition: width 0.2s;
+}
+
+.header-nav-link:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 
 .header-phone {
@@ -186,7 +216,7 @@ body::-webkit-scrollbar {
 .header-title {
   max-width: 67.5rem;
   margin: 1.4375rem 0 2.5rem;
-  font-family: "Bebas Neue Book", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 400;
   font-size: 5rem;
   line-height: 120%;
@@ -203,9 +233,9 @@ body::-webkit-scrollbar {
   margin-bottom: 3rem;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 160%;
   letter-spacing: 0.2px;
   word-spacing: -0.5px;
-  line-height: 160%;
   color: #ffffff;
 }
 
@@ -293,7 +323,7 @@ body::-webkit-scrollbar {
   margin: 0;
   margin-top: 1.5625rem;
   margin-bottom: 38px;
-  font-family: "Bebas Neue Book", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 400;
   font-size: 3.75rem;
   line-height: 120%;
@@ -317,7 +347,7 @@ body::-webkit-scrollbar {
 .steps-num {
   display: flex;
   align-items: center;
-  font-family: "Bebas Neue Book", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 120%;
@@ -365,9 +395,136 @@ body::-webkit-scrollbar {
 .steps-link::before {
   content: "";
   height: 0.0625rem;
-  width: 2.5rem;
+  width: 40px;
   margin-right: 1.25rem;
   background: #5c8ee6;
+  transition: width 0.2s;
+}
+
+.steps-link:hover:before {
+  width: 60px;
+}
+
+.section.section-light {
+  margin-bottom: 110px;
+}
+
+.section.production {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.section.production .section-title {
+  margin-bottom: 55px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  min-height: 593px;
+  flex-basis: 33.33%;
+  text-decoration: none;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+}
+
+.card:hover {
+  border-color: #5c8ee6;
+}
+
+.card:hover .card-title {
+  color: #5c8ee6;
+}
+
+.card-content {
+  padding: 2.5rem 3.125rem;
+  padding-right: 1rem;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 140%;
+  color: #292d33;
+  transition: color 0.2s;
+}
+
+.card-title br {
+  display: none;
+}
+
+.card-text {
+  max-width: 330px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.card-image {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.section.trademarks .section-title {
+  margin-bottom: 55px;
+}
+
+.cards--trademarks {
+  flex-wrap: nowrap;
+  max-width: 1440px;
+  gap: 0;
+}
+.card--trademarks {
+  display: block;
+  flex-basis: 50%;
+  min-height: 280px;
+  padding: 50px 3.125rem 34px;
+}
+.card--trademarks:first-child {
+  border-right: none;
+}
+
+.card--trademarks .card-content {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 180px minmax(290px, 390px);
+  grid-template-rows: auto 1fr;
+  gap: 0 3.125rem;
+}
+.card--trademarks .card-title {
+  grid-column: 2 / 3;
+  margin-bottom: 0;
+  grid-row: 1 / 2;
+}
+.card--trademarks .card-text {
+  grid-column: 2 / 3;
+  margin-bottom: 0;
+}
+
+.card--trademarks .card-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  grid-row: 1 / span 2;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 11.25rem;
+  height: 11.25rem;
+  flex-shrink: 0;
+  color: #828a99;
+}
+
+.card--trademarks:hover .card-image {
+  color: #5c8ee6;
 }
 
 @media (max-width: 1700px) {
@@ -433,6 +590,42 @@ body::-webkit-scrollbar {
   .logo-svg {
     max-width: none;
   }
+
+  .card {
+    flex-basis: 50%;
+  }
+
+  .card--trademarks {
+    display: flex;
+    flex-basis: 100%;
+    max-width: 684px;
+    width: 100%;
+    padding: 20px 30px;
+    min-height: 268px;
+  }
+
+  .card--trademarks .card-content {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .card--trademarks .card-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+  .card--trademarks .card-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
+  .card--trademarks .card-text {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 0;
+    max-width: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -478,9 +671,10 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
     width: 80px;
     height: 68px;
-    padding: 27.5px 30px;
+    padding: 27px 0;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
 
@@ -489,15 +683,15 @@ body::-webkit-scrollbar {
   }
 
   .mobile-menu-line {
-    width: 100%;
-    max-width: 20px;
+    width: 20px;
     height: 1px;
     background-color: #ffffff;
     transition: transform 0.2s;
   }
 
   .mobile-menu-line:nth-child(2) {
-    width: 80%;
+    width: 16px;
+    margin-left: -4px;
   }
 
   .navbar-light .navbar-button {
@@ -674,6 +868,10 @@ body::-webkit-scrollbar {
     min-height: 218px;
     height: auto;
   }
+
+  .card--trademarks {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -744,7 +942,7 @@ body::-webkit-scrollbar {
   }
 
   .header-features-item {
-		min-height: 0;
+    min-height: 0;
     height: auto;
     padding: 20px 30px;
   }
@@ -778,7 +976,7 @@ body::-webkit-scrollbar {
 
   .steps-text {
     margin-bottom: 26px;
-		font-size: 14px;
+    font-size: 14px;
     line-height: 160%;
   }
 
@@ -800,21 +998,106 @@ body::-webkit-scrollbar {
     margin-left: auto;
     margin-right: 15px;
   }
+
+  .section.production {
+    margin-bottom: 100px;
+  }
+
+  .section.section-light {
+    margin-bottom: 96px;
+  }
+
+  .section.production .section-title {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    flex-basis: 100%;
+    min-height: 429px;
+  }
+
+  .card-content {
+    padding-top: 20px;
+  }
+
+  .card-title {
+    margin-bottom: 5px;
+  }
+
+  .card-title br {
+    display: block;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .card-image {
+    max-width: 345px;
+  }
+
+  .cards--trademarks {
+    flex-wrap: wrap;
+  }
+
+  .card--trademarks {
+    min-height: 268px;
+  }
+
+  .card--trademarks:first-child {
+    border-right: 1px solid #ebebf0;
+  }
+
+  .section.trademarks .section-title {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
+    max-width: calc(100% - 30px);
+  }
+
+  .section-light .container {
     max-width: 100%;
   }
+
+  .header .container {
+    max-width: 100%;
+  }
+
   .header-content {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .section-light .separator {
     margin-left: 15px;
   }
-  .section-title {
-    margin-left: 15px;
-    margin-right: 15px;
+
+  .section-light .section-title {
+    padding-left: 15px;
+  }
+
+  .swiper-steps {
+    overflow: hidden;
+  }
+
+  .swiper-steps .swiper-wrapper {
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  .card-content {
+    padding: 20px 30px 0 30px;
+  }
+
+  .card:nth-child(3) .card-image,
+  .card:nth-child(4) .card-image {
+    max-width: 87%;
+  }
+
+  .card--trademarks .card-content {
+    gap: 20px 30px;
   }
 }
