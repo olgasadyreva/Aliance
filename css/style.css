@@ -664,6 +664,10 @@ body::-webkit-scrollbar {
   .header-phone {
     margin-right: 2rem;
   }
+
+  .card-image {
+    max-width: 94%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -987,6 +991,14 @@ body::-webkit-scrollbar {
     height: auto;
   }
 
+  .card {
+   min-height: 429px;
+  }
+
+  .card-image {
+    max-width: 345px;
+  }
+
   .card--trademarks {
     flex-basis: 100%;
   }
@@ -1143,7 +1155,6 @@ body::-webkit-scrollbar {
 
   .card {
     flex-basis: 100%;
-    min-height: 429px;
   }
 
   .card-content {
@@ -1160,10 +1171,6 @@ body::-webkit-scrollbar {
 
   .card-text {
     font-size: 14px;
-  }
-
-  .card-image {
-    max-width: 345px;
   }
 
   .cards--trademarks {
@@ -1200,6 +1207,10 @@ body::-webkit-scrollbar {
     margin-bottom: 100px;
   }
 
+	.founder-content-wrapper {
+		justify-content: flex-start;
+	}
+
   .founder-foto {
     position: relative;
     width: 100%;
@@ -1225,7 +1236,7 @@ body::-webkit-scrollbar {
   }
 
   .clients .container {
-    max-width: 48rem;
+    /* max-width: 48rem; */
   }
 
   .clients .section-title {
@@ -1303,6 +1314,12 @@ body::-webkit-scrollbar {
 
   .card--trademarks .card-content {
     gap: 20px 30px;
+  }
+
+	.clients .container {
+    max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
   }
 
   .clients-list {
