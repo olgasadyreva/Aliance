@@ -620,17 +620,18 @@ body::-webkit-scrollbar {
   flex-basis: 33.33%;
   padding: 44px 1rem;
   border: 1px solid #ebebf0;
+	transition: filter 0.2s;
+  filter: grayscale(100%);
 }
 
 .clients-logo {
   max-width: 100%;
   width: 70px;
   height: 70px;
-  filter: grayscale();
 }
 
-.clients-logo:hover {
-  filter: none;
+.clients-logo-item:hover {
+  filter: grayscale(0%);
 }
 
 @media (max-width: 1700px) {
