@@ -39,12 +39,12 @@ mMenuToggle.addEventListener("click", (event) => {
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".header-features-slider", {
   speed: 400,
   slidesPerView: 1,
   navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
+    nextEl: ".features-button-next",
+    prevEl: ".features-button-prev",
   },
   breakpoints: {
     // when window width is >= 320px
@@ -71,15 +71,15 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swiperSteps = new Swiper(".swiper.swiper-steps", {
+const swiperSteps = new Swiper(".steps-slider", {
   speed: 400,
   slidesPerView: 1,
   navigation: {
-    nextEl: ".swiper-steps .slider-button-next",
-    prevEl: ".swiper-steps .slider-button-prev",
+    nextEl: ".steps-button-next",
+    prevEl: ".steps-button-prev",
   },
   breakpoints: {
-		320: {
+    320: {
       slidesPerView: 1.3,
     },
     576: {
@@ -90,6 +90,22 @@ const swiperSteps = new Swiper(".swiper.swiper-steps", {
     },
     1024: {
       slidesPerView: 3,
-    }
+    },
+  },
+});
+
+const swiperBlog = new Swiper(".blog-slider", {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
   },
 });
