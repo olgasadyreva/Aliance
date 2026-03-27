@@ -900,8 +900,9 @@ body::-webkit-scrollbar {
 
 .footer-seporator {
   margin: 0;
+	border: none;
+  border-top: 2px solid #ebebf0;
   color: #ebebf0;
-  background-color: #ebebf0;
 }
 
 .footer-bottom {
