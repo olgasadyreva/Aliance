@@ -1844,6 +1844,10 @@ body::-webkit-scrollbar {
     padding-bottom: 0;
   }
 
+	.footer-menu-column-2 {
+		min-width: 0;
+	}
+
   .footer-menu-title {
     margin-bottom: 20px;
     font-size: 14px;
