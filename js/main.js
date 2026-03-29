@@ -109,3 +109,38 @@ const swiperBlog = new Swiper(".blog-slider", {
     },
   },
 });
+
+const modal = document.querySelector(".modal");
+const modalToggle = document.querySelectorAll("[data-toggle=modal]");
+const modalClose = document.querySelector(".modal-close");
+const body = document.querySelector("body");
+
+const openModal = () => {
+  modal.classList.add("is-open");
+};
+
+const closeModal = () => {
+  modal.classList.remove("is-open");
+};
+
+modalToggle.forEach((element) => {
+  element.addEventListener("click", () => {
+    openModal();
+  });
+});
+
+modalClose.addEventListener("click", () => {
+  closeModal();
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
