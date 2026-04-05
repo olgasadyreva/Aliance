@@ -221,7 +221,7 @@
           случаях!
         </p>
 
-        <form action="#" class="modal-form">
+        <form action="#" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input
