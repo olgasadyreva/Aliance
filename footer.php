@@ -211,13 +211,14 @@
       случаях!
     </p>
 
-    <form action="#" method="POST" class="modal-form">
+    <form action="hadler.php" method="POST" class="modal-form">
       <div class="input-group-wrapper input-group-vertical">
         <div class="input-group modal-input-group">
           <input
             id="modal-user-name"
             type="text"
             class="input modal-input"
+						name="username"
             placeholder=""
             maxlength="100"
             required>
@@ -232,6 +233,7 @@
             id="modal-user-phone"
             type="tel"
             class="input modal-input"
+						name="userphone"
             placeholder=""
             maxlength="100"
             required>
@@ -263,6 +265,7 @@
 </div>
 
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/just-validate.production.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

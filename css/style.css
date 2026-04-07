@@ -909,6 +909,22 @@ body::-webkit-scrollbar {
   background-color: inherit;
 }
 
+.input.is-invalid {
+	border: 1px solid red;
+}
+
+.just-validate-error-label {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	display: inline-block;
+	font-size: 0.8rem;
+	background-color: inherit;
+	transform: translateY(-50%);
+}
+
 .cta-form-footer {
   display: flex;
   align-items: center;
