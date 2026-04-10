@@ -136,8 +136,6 @@ document.addEventListener("click", (event) => {
     (!event.composedPath().includes(modalDialog) &&
       modalSuccess.classList.contains("is-open"))
   ) {
-    ctaForm.reset();
-    event.preventDefault();
     modalSuccess.classList.toggle("is-open");
   }
 });
