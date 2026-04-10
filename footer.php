@@ -20,8 +20,8 @@
               name="username"
               class="input"
               placeholder=""
-							maxlength="100"
-            	required>>
+              maxlength="100"
+              required>
 
             <label class="input-group-label" for="user-name">Имя</label>
           </div>
@@ -33,15 +33,15 @@
               name="userphone"
               class="input"
               placeholder=""
-							maxlength="30"
-            	required>>
+              maxlength="30"
+              required>
 
             <label class="input-group-label" for="user-phone">Номер телефона</label>
           </div>
         </div>
 
         <div class="cta-form-footer">
-          <button type="submit" class="button cta-form-button">
+          <button type="submit" class="button cta-form-button" data-toggle="modal-success">
             Отправить заявку
           </button>
 
@@ -218,7 +218,7 @@
             id="modal-user-name"
             type="text"
             class="input modal-input"
-						name="username"
+            name="username"
             placeholder=""
             maxlength="100"
             required>
@@ -233,7 +233,7 @@
             id="modal-user-phone"
             type="tel"
             class="input modal-input"
-						name="userphone"
+            name="userphone"
             placeholder=""
             maxlength="100"
             required>
@@ -264,8 +264,35 @@
   </div>
 </div>
 
+<div class="modal modal-success">
+  <div class="modal-dialog">
+    <svg class="modal-bg" width="360" height="310">
+      <use xlink:href="img/sprite.svg#thanks_illu"></use>
+    </svg>
+
+    <h2 class="modal-title">Спасибо за заявку!</h2>
+
+    <a href="" class="modal-close" data-toggle="modal-success">
+      <svg class="close-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+
+    <p class="modal-text">
+      Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+    </p>
+
+    <div class="modal-footer">
+      <a href="/" class="button modal-button">
+        Вернуться на главную
+      </a>
+    </div>
+  </div>
+</div>
+
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/just-validate.production.min.js"></script>
+<script src="js/imask.js"></script>
 <script src="js/main.js"></script>
 </body>
 
