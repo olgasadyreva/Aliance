@@ -4,6 +4,7 @@ const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
+let isValid = false;
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
@@ -136,7 +137,7 @@ document.addEventListener("click", (event) => {
     (!event.composedPath().includes(modalDialog) &&
       modalSuccess.classList.contains("is-open"))
   ) {
-    modalSuccess.classList.toggle("is-open");
+		if(isValid) modalSuccess.classList.toggle("is-open");
   }
 });
 
@@ -182,6 +183,7 @@ forms.forEach((form) => {
       },
     ])
     .onSuccess((event) => {
+			isValid = true;
       const thisForm = event.target;
       const formData = new FormData(thisForm);
       const ajaxSend = (formData) => {
