@@ -31,7 +31,7 @@
               id="user-phone"
               type="tel"
               name="userphone"
-              class="input"
+              class="input phone-mask"
               placeholder=""
               maxlength="30"
               required>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="cta-form-footer">
-          <button type="submit" class="button cta-form-button" data-toggle="modal-success">
+          <button type="submit" class="button cta-form-button">
             Отправить заявку
           </button>
 
@@ -195,11 +195,11 @@
   </div>
 </footer>
 
-<div class="modal">
+<div class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
 
-    <a href="" class="modal-close" data-toggle="modal">
+    <a href="" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
       <svg class="close-icon">
         <use xlink:href="img/sprite.svg#close"></use>
       </svg>
@@ -211,7 +211,7 @@
       случаях!
     </p>
 
-    <form action="hadler.php" method="POST" class="modal-form">
+    <form action="handler.php" method="POST" class="modal-form">
       <div class="input-group-wrapper input-group-vertical">
         <div class="input-group modal-input-group">
           <input
@@ -232,7 +232,7 @@
           <input
             id="modal-user-phone"
             type="tel"
-            class="input modal-input"
+            class="input modal-input phone-mask"
             name="userphone"
             placeholder=""
             maxlength="100"
@@ -264,7 +264,7 @@
   </div>
 </div>
 
-<div class="modal modal-success">
+<div class="modal modal-success" id="alert-modal">
   <div class="modal-dialog">
     <svg class="modal-bg" width="360" height="310">
       <use xlink:href="img/sprite.svg#thanks_illu"></use>
@@ -272,7 +272,7 @@
 
     <h2 class="modal-title">Спасибо за заявку!</h2>
 
-    <a href="" class="modal-close" data-toggle="modal-success">
+    <a href="" class="modal-close" data-toggle="modal" data-target="#alert-modal">
       <svg class="close-icon">
         <use xlink:href="img/sprite.svg#close"></use>
       </svg>
@@ -292,7 +292,6 @@
 
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/just-validate.production.min.js"></script>
-<script src="js/imask.js"></script>
 <script src="js/main.js"></script>
 </body>
 

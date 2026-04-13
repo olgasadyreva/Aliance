@@ -139,7 +139,7 @@
         >
       </div>
 
-      <button class="navbar-button button" data-toggle="modal">
+      <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
         <svg class="button-icon">
           <use xlink:href="img/sprite.svg#phone"></use>
         </svg>
