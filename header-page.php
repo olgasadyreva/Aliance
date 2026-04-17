@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" >
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/style.css" >
-    <title>Aliance Production</title>
+    <title><?= $page_title ?> - Aliance Production</title>
   </head>
-  <body class="front-page">
+  <body class="<?= $body_class ?>">
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
           <a href="./about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+              <a class="mobile-submenu-link" href="./product-avtohim.php">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -48,21 +48,21 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+              <a class="mobile-submenu-link" href="./product-ag-tech.php">Автохимия AG-Tech</a>
             </li>
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автохимия химия AP</a>
+              <a class="mobile-submenu-link" href="./product-avtohim.php">Автохимия AP</a>
             </li>
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
+          <a href="./news.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+74996861014" class="mobile-phone"> +7 (499) 686-10-14 </a>
@@ -97,7 +97,7 @@
         </a>
       </div>
     </div>
-    <nav class="navbar">
+    <nav class="navbar navbar-light">
       <a href="#" class="mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
@@ -117,16 +117,16 @@
           <a href="./about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+          <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Новости</a>
+          <a href="./news.php" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контакты</a>
+          <a href="./contacts.php" class="header-nav-link">Контакты</a>
         </li>
       </ul>
 
@@ -147,44 +147,26 @@
       </button>
     </nav>
 
-    <header class="header header-image">
+    <header class="header <?= $header_style; ?>">
       <div class="container">
         <div class="header-content">
           <div class="separator"></div>
 
-					<h1 class="header-title">
-						<?php echo "Комплексное обеспечение товарами и расходными материалами бизнеса"; ?>
-          </h1>
+          <h1 class="header-title <?= $header_title_style; ?>"><?= $page_title; ?></h1>
 
-          <p class="header-text">
-            Высокий уровень вовлечения представителей целевой аудитории является
-            четким доказательством простого факта: высококачественный прототип
-            будущего проекта напрямую зависит от анализа существующих паттернов
-            поведения.
-          </p>
+          <div class="breadcrumbs <?= $breadcrumbs_style; ?>">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a href="/index.html" class="breadcrumbs-link">Главная</a>
+              </li>
 
-          <button class="button header-button" data-toggle="modal" data-target="#feedback-modal">
-            Подробнее о компании
-          </button>
+              <li>
+                <a href="./about.php" class="breadcrumbs-link active"
+                  ><?= $page_title ?></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-
- 				<?php $block_title = ""; include_once('./template-parts/features-slider-block.php') ?>
-
       </div>
     </header>
-
-	<?php $block_title = "схема работы"; include_once('./template-parts/scheme-block.php') ?>
-
-    <?php $block_title = "контрактное производство"; include_once('./template-parts/production-block.php') ?>
-
-    <?php $block_title = "собственные торговые марки"; include_once('./template-parts/trademarks-block.php') ?>
-
-    <?php $block_title = ""; include_once('./template-parts/founder-block.php') ?>
-
-		<?php $block_title = ""; include_once('./template-parts/clients-block.php') ?>
-
-		<?php $block_title = "блог экспертов в области производства"; include_once('./template-parts/blog-block.php') ?>
-
-
-
-    <?php include_once('footer.php');?>

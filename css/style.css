@@ -111,12 +111,34 @@ body::-webkit-scrollbar {
   color: #292d33;
 }
 
+.not-found .header-title {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 300px;
+  color: #5c8ee5;
+}
+
+.not-found .separator,
+.not-found .breadcrumbs {
+  display: none;
+}
+
 .header-single-image {
   position: relative;
   background-image: url(../img/avto-him-header.png);
   background-size: 480px 240px;
   background-repeat: no-repeat;
   background-position: 80% bottom;
+}
+
+.blog-more .header-content {
+  padding: 40px 0 30px 0;
+}
+
+.blog-more .header-title {
+  max-width: none;
 }
 
 .about-page .header-image {
@@ -127,7 +149,11 @@ body::-webkit-scrollbar {
   background-position: center bottom;
 }
 
-.about-page .header-single {
+.about-page .header-single,
+.contracts .header-single,
+.contacts .header-single,
+.blog .header-single,
+.politics .header-single {
   max-height: 270px;
 }
 
@@ -135,7 +161,14 @@ body::-webkit-scrollbar {
   max-width: none;
 }
 
-.about-page .header-content {
+.about-page .header-content,
+.contracts .header-content,
+.contacts .header-content,
+.blog .header-content,
+.trademarks-page .header-content,
+.product .header-content,
+.news .header-content,
+.politics .header-content {
   padding-top: 50px;
 }
 
@@ -192,6 +225,11 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.blog-more .header-image {
+  background-image: url("../img/blog/header-bg-blog.jpg");
+  background-position: center top;
 }
 
 .header-image::before {
@@ -415,6 +453,16 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   line-height: 165%;
   color: #ffffff;
+}
+
+.header-features-slider-light {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-features-slider-light .header-features-text {
+  color: #292d33;
 }
 
 .header-button {
@@ -745,6 +793,14 @@ body::-webkit-scrollbar {
   margin-bottom: 55px;
 }
 
+.blog:has(div.blog-slider-footer-none) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog:has(div.blog-slider-footer-none):first-of-type {
+  margin-top: 100px;
+}
+
 .blog-card {
   position: relative;
   display: flex;
@@ -800,6 +856,11 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   margin-top: 32px;
   height: 60px;
+}
+
+.blog-slider-footer-none {
+  display: none;
+  margin-top: 0;
 }
 
 .blog-buttons {
