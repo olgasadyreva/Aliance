@@ -132,7 +132,7 @@ modalButtons.forEach((button) => {
     modalDialog = currentModal.querySelector(".modal-dialog");
     currentModal.addEventListener("click", (event) => {
       if (!event.composedPath().includes(modalDialog)) {
-        currentModal.remove("is-open");
+        currentModal.classList.remove("is-open");
       }
     });
   });
@@ -187,7 +187,7 @@ forms.forEach((form) => {
             modalDialog = currentModal.querySelector(".modal-dialog");
             currentModal.addEventListener("click", (event) => {
               if (!event.composedPath().includes(modalDialog)) {
-                currentModal.remove("is-open");
+                currentModal.classList.remove("is-open");
               }
             });
           } else {
