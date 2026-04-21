@@ -19,7 +19,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/avto-him.webp">
           <source type="image/png" srcset="img/avto-him.png">
-          <img src="img/avto-him.png" alt="Автомобильная химия">
+          <img src="img/avto-him.png" alt="Автомобильная химия" width="480" height="300">
         </picture>
       </a>
 
@@ -34,7 +34,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/household-chemicals.webp">
           <source type="image/png" srcset="img/household-chemicals.png">
-          <img src="img/household-chemicals.png" alt="Бытовая химия">
+          <img src="img/household-chemicals.png" alt="Бытовая химия" width="480" height="300">
         </picture>
       </a>
 
@@ -48,7 +48,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/disinfectants.webp">
           <source type="image/png" srcset="img/disinfectants.png">
-          <img src="img/disinfectants.png" alt="Дезинфицирующие средства">
+          <img src="img/disinfectants.png" alt="Дезинфицирующие средства" width="480" height="300">
         </picture>
       </a>
 
@@ -63,7 +63,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/food-aerosols.webp">
           <source type="image/png" srcset="img/food-aerosols.png">
-          <img src="img/food-aerosols.png" alt="Пищевые аэрозоли">
+          <img src="img/food-aerosols.png" alt="Пищевые аэрозоли" width="480" height="300">
         </picture>
       </a>
 
@@ -77,7 +77,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/cosmetic-products.webp">
           <source type="image/png" srcset="img/cosmetic-products.png">
-          <img src="img/cosmetic-products.png" alt="Косметическая продукция">
+          <img src="img/cosmetic-products.png" alt="Косметическая продукция" width="480" height="300">
         </picture>
       </a>
 
@@ -92,7 +92,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/aerosol-paints.webp">
           <source type="image/png" srcset="img/aerosol-paints.png">
-          <img src="img/aerosol-paints.png" alt="Краски аэрозольные">
+          <img src="img/aerosol-paints.png" alt="Краски аэрозольные" width="480" height="300">
         </picture>
       </a>
     </div>

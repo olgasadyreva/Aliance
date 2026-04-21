@@ -11,6 +11,5 @@ include_once('./template-parts/features-slider-block.php');
 
 $block_title = "схема работы";
 include_once('./template-parts/scheme-block.php');
-include_once('./template-parts/clients-block.php');
-?>
+include_once('./template-parts/clients-block.php');?>
 <?php include_once('footer.php');?>

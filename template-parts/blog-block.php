@@ -16,7 +16,7 @@
           <picture class="blog-card-image">
             <source type="image/webp" srcset="img/blog/blog-photo.webp">
             <source type="image/png" srcset="img/blog/blog-photo.jpg">
-            <img src="img/blog/blog-photo.jpg" alt="blog-photo">
+            <img src="img/blog/blog-photo.jpg" alt="blog-photo" width="705" height="400">
           </picture>
 
           <h3 class="blog-card-title">
@@ -34,7 +34,7 @@
           <picture class="blog-card-image">
             <source type="image/webp" srcset="img/blog/blog-photo-2.webp">
             <source type="image/png" srcset="img/blog/blog-photo-2.jpg">
-            <img src="img/blog/blog-photo-2.jpg" alt="blog-photo-2">
+            <img src="img/blog/blog-photo-2.jpg" alt="blog-photo-2" width="705" height="400">
           </picture>
 
           <h3 class="blog-card-title">
@@ -52,7 +52,7 @@
           <picture class="blog-card-image">
             <source type="image/webp" srcset="img/blog/blog-photo.webp">
             <source type="image/png" srcset="img/blog/blog-photo.jpg">
-            <img src="img/blog/blog-photo.jpg" alt="blog-photo">
+            <img src="img/blog/blog-photo.jpg" alt="blog-photo" width="705" height="400">
           </picture>
 
           <h3 class="blog-card-title">

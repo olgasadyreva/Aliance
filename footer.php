@@ -3,7 +3,7 @@
     <picture class="cta-image">
       <source type="image/webp" srcset="img/cta.webp">
       <source type="image/png" srcset="img/cta.png">
-      <img src="img/cta.png" alt="call to action">
+      <img src="img/cta.png" alt="call to action" width="720" height="626">
     </picture>
 
     <div class="cta-form-wrapper container">
@@ -199,7 +199,7 @@
   </div>
 </footer>
 
-<div class="modal" id="feedback-modal">
+<div class="modal" role="dialog" aria-labelledby="feedback-modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
 
@@ -268,7 +268,7 @@
   </div>
 </div>
 
-<div class="modal modal-success" id="alert-modal">
+<div class="modal modal-success" role="alertdialog" aria-labelledby="alert-modal" id="alert-modal">
   <div class="modal-dialog">
     <svg class="modal-bg" width="360" height="310">
       <use xlink:href="img/sprite.svg#thanks_illu"></use>

@@ -1,0 +1,9 @@
+{
+    "http.proxyStrictSSL": false,
+	"liveServer.settings.useWebExt": true,
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "https://aliance"
+    }
+}

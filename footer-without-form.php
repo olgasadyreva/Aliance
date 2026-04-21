@@ -132,7 +132,7 @@
   </div>
 </footer>
 
-<div class="modal" id="feedback-modal">
+<div class="modal" role="dialog" aria-labelledby="feedback-modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
 
@@ -201,7 +201,7 @@
   </div>
 </div>
 
-<div class="modal modal-success" id="alert-modal">
+<div class="modal modal-success" role="alertdialog" aria-labelledby="alert-modal" id="alert-modal">
   <div class="modal-dialog">
     <svg class="modal-bg" width="360" height="310">
       <use xlink:href="img/sprite.svg#thanks_illu"></use>
