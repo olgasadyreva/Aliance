@@ -1,6 +1,6 @@
 <?php
 $body_class = 'news';
-$page_title = 'новости';
+$page_title = 'Новости';
 $header_style = 'header-single';
 $header_title_style = 'header-title-light';
 $breadcrumbs_style = 'breadcrumbs-light';

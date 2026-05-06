@@ -1,5 +1,6 @@
 <section class="section production">
   <div class="container">
+    <h2 class="visually-hidden">Контрактное производство</h2>
     <?php
     if (!empty($block_title)) {
       echo '<div class="separator"></div>';

@@ -7,7 +7,7 @@
       <svg class="header-features-svg">
         <use xlink:href="img/sprite.svg#time"></use>
       </svg>
-      <p class="header-features-text">Непрерывная работа c 2017 года</p>
+      <p class="header-features-text">Непрерывная работа c&nbsp;2017 года</p>
     </li>
     <li class="swiper-slide header-features-item">
       <svg class="header-features-svg">
@@ -17,10 +17,10 @@
     </li>
     <li class="swiper-slide header-features-item">
       <svg class="header-features-svg">
-        <use xlink:href="img/sprite.svg#delivery"></use>
+        <use xlink:href="img/sprite.svg#person"></use>
       </svg>
       <p class="header-features-text">
-        Возможны поставки по всей России
+        Контроль качества на всех этапах
       </p>
     </li>
     <li class="swiper-slide header-features-item">
@@ -28,7 +28,7 @@
         <use xlink:href="img/sprite.svg#delivery"></use>
       </svg>
       <p class="header-features-text">
-        Возможны поставки по всей России
+        Возможны поставки по&nbsp;всей России
       </p>
     </li>
     <li class="swiper-slide header-features-item">

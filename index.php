@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Aliance Production</title>
 </head>
 
@@ -15,10 +15,10 @@
         <a href="./about.php" class="mobile-menu-link">О компании</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Контрактное производство</a>
+        <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+            <a class="mobile-submenu-link" href="./product-avtohim.php">Автомобильная химия</a>
           </li>
           <li class="mobile-submenu-item">
             <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -38,21 +38,21 @@
         </ul>
       </li>
       <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Собственные марки</a>
+        <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+            <a class="mobile-submenu-link" href="./product-ag-tech.php">Автохимия AG-Tech</a>
           </li>
           <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автохимия химия AP</a>
+            <a class="mobile-submenu-link" href="./product-avtohim.php">Автохимия AP</a>
           </li>
         </ul>
       </li>
       <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Новости</a>
+        <a href="./news.php" class="mobile-menu-link">Новости</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Контакты</a>
+        <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
       </li>
     </ul>
     <a href="tel:+74996861014" class="mobile-phone"> +7 (499) 686-10-14 </a>
@@ -105,16 +105,16 @@
         <a href="./about.php" class="header-nav-link">О компании</a>
       </li>
       <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Контрактное производство</a>
+        <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
       </li>
       <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Собственные торговые марки</a>
+        <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
       </li>
       <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Новости</a>
+        <a href="./news.php" class="header-nav-link">Новости</a>
       </li>
       <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Контакты</a>
+        <a href="./contacts.php" class="header-nav-link">Контакты</a>
       </li>
     </ul>
 

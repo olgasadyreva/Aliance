@@ -78,7 +78,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -86,7 +86,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -94,7 +94,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -102,7 +102,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -110,7 +110,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -118,7 +118,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -126,7 +126,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -134,7 +134,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
 
@@ -142,7 +142,7 @@
           <picture class="clients-logo">
             <source type="image/webp" srcset="img/client.webp">
             <source type="image/png" srcset="img/client.png">
-            <img src="img/client.png" alt="clients-logo" width="70" height="70" >
+            <img src="img/client.png" alt="clients-logo" width="70" height="70">
           </picture>
         </a>
       </div>

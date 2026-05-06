@@ -1,9 +1,11 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
-      <svg class="logo-svg footer-logo">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
+      <a href="./" class="footer-logo">
+        <svg class="logo-svg">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
 
       <a href="tel:+79996861014" class="footer-phone">
         +7 (999) 686-10-14

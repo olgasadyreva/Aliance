@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title><?= $page_title ?> - Aliance Production</title>
 </head>
 
@@ -147,7 +147,7 @@
       <svg class="button-icon">
         <use xlink:href="img/sprite.svg#phone"></use>
       </svg>
-      <span class="button-text"> Получить консультацию </span>
+      <span class="button-text">Получить консультацию</span>
     </button>
   </nav>
 

@@ -23,7 +23,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script>
     /*! modernizr 3.6.0 (Custom Build) | MIT *
      * https://modernizr.com/download/?-webp-setclasses !*/
@@ -153,7 +153,7 @@
       e.Modernizr = Modernizr
     }(window, document);
   </script>
-  <title><?= $page_title ?> - Aliance Production</title>
+  <title>Aliance Production</title>
 </head>
 
 <body class="<?= $body_class ?>">

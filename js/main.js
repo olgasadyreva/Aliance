@@ -21,6 +21,8 @@ const changeNavHeight = (height) => {
 const openMenu = (event) => {
   menu.classList.add("is-open");
   mMenuToggle.classList.add("close-menu");
+	changeNavHeight("48px");
+
   document.body.style.overflow = "hidden";
   lightModeOn();
 };
@@ -29,6 +31,7 @@ const closeMenu = (event) => {
   menu.classList.remove("is-open");
   mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = "";
+	changeNavHeight("68px");
   lightModeOff();
 };
 
@@ -70,7 +73,7 @@ const swiper = new Swiper(".header-features-slider", {
       slidesPerView: 4,
     },
     // when window width is >= 1200px
-    1200: {
+    1450: {
       slidesPerView: 5,
     },
   },
@@ -106,6 +109,25 @@ const swiperBlog = new Swiper(".blog-slider", {
   navigation: {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+});
+
+const swiperArticle = new Swiper(".article-slider", {
+  speed: 400,
+  slidesPerView: 1.05,
+  spaceBetween: 0,
+	loop: true,
+	initialSlide: 1,
+	centeredSlide: true,
+  navigation: {
+    nextEl: ".article-button-next",
+    prevEl: ".article-button-prev",
   },
   breakpoints: {
     768: {

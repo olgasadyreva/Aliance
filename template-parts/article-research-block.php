@@ -1,0 +1,80 @@
+<section class="section article article-research">
+  <div class="container">
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        <div class="separator"></div>
+        <h2 class="section-title">Исследовательский центр Aliance production</h2>
+        <div class="article-wrap">
+          <p class="article-text">
+            Явные признаки победы институционализации рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. Лишь акционеры крупнейших компаний могут быть призваны к ответу.
+          </p>
+
+          <p class="article-text">
+            С учётом сложившейся международной обстановки, синтетическое тестирование требует определения и уточнения анализа существующих паттернов поведения. Не следует, однако, забывать, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="visually-hidden">Исследовательский центр Aliance production-слайдер</h2>
+  <div class="container">
+    <div class="swiper article-slider">
+      <!-- обертка слайдера -->
+      <div class="swiper-wrapper">
+        <!-- слайды -->
+        <a href="#" class="swiper-slide article-card">
+          <picture class="article-card-image">
+            <source type="image/webp" srcset="img/blog/blog-photo.webp">
+            <source type="image/png" srcset="img/blog/blog-photo.jpg">
+            <img src="img/blog/blog-photo.jpg" alt="blog-photo" width="705" height="400">
+          </picture>
+        </a>
+
+        <a href="#" class="swiper-slide article-card">
+          <picture class="article-card-image">
+            <source type="image/webp" srcset="img/blog/blog-photo-2.webp">
+            <source type="image/png" srcset="img/blog/blog-photo-2.jpg">
+            <img src="img/blog/blog-photo-2.jpg" alt="blog-photo-2" width="705" height="400">
+          </picture>
+        </a>
+
+        <a href="#" class="swiper-slide article-card">
+          <picture class="article-card-image">
+            <source type="image/webp" srcset="img/blog/blog-photo.webp">
+            <source type="image/png" srcset="img/blog/blog-photo.jpg">
+            <img src="img/blog/blog-photo.jpg" alt="blog-photo" width="705" height="400">
+          </picture>
+        </a>
+
+        <a href="#" class="swiper-slide article-card">
+          <picture class="article-card-image">
+            <source type="image/webp" srcset="img/blog/blog-photo-2.webp">
+            <source type="image/png" srcset="img/blog/blog-photo-2.jpg">
+            <img src="img/blog/blog-photo-2.jpg" alt="blog-photo" width="705" height="400">
+          </picture>
+        </a>
+      </div>
+
+      <div class="article-slider-footer <?= $blog_style; ?>">
+
+        <div class="article-buttons primary-buttons-wrapper">
+          <div class="article-button-prev primary-button-prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-prev-steps"></use>
+            </svg>
+          </div>
+
+          <div class="article-button-next primary-button-next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-next-steps"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,6 +1,6 @@
 <?php
 $body_class = 'contacts';
-$page_title = 'контакты';
+$page_title = 'Контакты';
 $header_style = 'header-single';
 $header_title_style = 'header-title-light';
 $breadcrumbs_style = 'breadcrumbs-light';

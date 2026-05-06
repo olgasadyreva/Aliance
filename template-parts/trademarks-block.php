@@ -1,5 +1,6 @@
 <section class="section trademarks">
   <div class="container">
+    <h2 class="visually-hidden">Собственные торговые марки</h2>
 
     <?php
     if (!empty($block_title)) {
